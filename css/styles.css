@@ -1,0 +1,240 @@
+/*  COLOR PALETTE
+
+   --color-bg:         #F5F5F5   light grey page background
+   --color-header:     #1A3C5E   navy blue header
+   --color-footer:     #1A3C5E   navy blue footer
+   --color-work:       #EAF2FB   light blue — work experience
+   --color-education:  #EAF7F0   light green — education
+   --color-projects:   #FDF6EC   warm cream — projects
+   --color-accent:     #1A3C5E   navy — headings and links
+   --color-text:       #222222   dark body text
+   --color-muted:      #666666   grey secondary text
+   --color-border:     #CCCCCC   light borders */
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F5F5F5;
+    color: #222222;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0; 
+}
+
+a {
+    color: #1A3C5E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2a5c8e;
+}
+
+h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2.6rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.4rem;
+    color: #1A3C5E;
+    margin-top: 0;       
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #1A3C5E;
+}
+
+h3 {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 1.05rem;
+    color: #222222;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+p {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.94rem;
+    margin-bottom: 4px;
+    color: #333333;
+    line-height: 1.65;
+}
+
+
+/* content wrap*/
+.content-wrap {
+    max-width: 950px;    
+    margin: 0 auto;
+    padding: 50px;       
+    overflow: hidden;    
+}
+
+
+/* column narrow */
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+
+/* column wide */
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+
+/* Header */
+header {
+    background-color: #1A3C5E;
+}
+
+/* Step 4b/c/f: profile-img — width only, border-radius kept.
+   float, margin-right removed in Step 6f (column-narrow handles layout) */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+    object-position: center top; 
+    display: block;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1rem;
+    color: #B8D4EF;
+    border-bottom: none;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #cce0f5;
+    line-height: 1.7;
+}
+
+
+/* Main */
+main {
+    background-color: #ffffff;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+/* Work experience */
+section.work-experience {
+    background-color: #EAF2FB;
+    border-left: 4px solid #1A3C5E;
+}
+
+/* Education */
+section.education {
+    background-color: #EAF7F0;
+    border-left: 4px solid #2E8B57;
+}
+
+section.education h2 {
+    color: #2E8B57;
+    border-bottom-color: #2E8B57;
+}
+
+/* Projects */
+section.projects {
+    background-color: #FDF6EC;
+    border-left: 4px solid #C07828;
+}
+
+section.projects h2 {
+    color: #C07828;
+    border-bottom-color: #C07828;
+}
+
+
+/* Helper class */
+.company,
+.degree,
+.tech {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 6px;
+}
+
+.date {
+    font-size: 0.84rem;
+    font-weight: 300;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+
+/* Footer  */
+footer {
+    background-color: #1A3C5E;
+    text-align: center; 
+}
+
+footer h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: none;
+    margin-bottom: 16px;
+}
+
+.contact-info a {
+    padding: 10px;              
+    display: inline-block;      
+    color: #9ec8f0;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.contact-info a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #8ab4d4;
+    margin-bottom: 0;
+}
